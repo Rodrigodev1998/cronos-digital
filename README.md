@@ -2,3 +2,4 @@
 
 Cronometro digital.
 # cronos
+# cronos-digital
