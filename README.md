@@ -1,3 +1,3 @@
-# CronosApp!!
+# cronos!
 
 Cronometro digital.
