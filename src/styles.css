@@ -1,1 +1,154 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    text-align: center;
+    justify-content: center;
+}
+.logo img{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100px;
+
+}
+
+.dnone {
+    display: none;
+  }
+  
+.content{
+    background-color: #063970;
+    width: 50rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+}
+
+.content-timer{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+
+.content-timer.content-h.content-m.content-s{
+    width: 16rem;
+    height:10rem; 
+}
+
+.time{
+    font-size: 130px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center; 
+    margin: 0 10px;
+}
+
+span{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.content-btn{
+ text-align: center;
+}
+
+.content-btn button{
+    font-size: 2.8rem;
+    width: 3rem;
+    margin: 0 10px;
+    border: none;
+    outline: inherit;
+    color: #fff;
+    background: #063970;
+}
+
+.content-btn button:hover{
+    background: #08488d;
+    transition: 0.5s;
+    transform: scale(0.8);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.content-btn-action{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.content-btn-action button{
+    font-size: 3rem;
+    width: 5.5rem;
+    margin: 0 30px;
+    border-radius: 20px;
+    border: none;
+    outline: inherit;
+    color: #fff;
+    background: #063970;
+}
+
+.content-btn-action button:hover{
+    background-color: #08488d;
+    transition: 0.6s;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.content-btn-action button:disabled{
+    opacity: 0.3;
+}
+
+.move{
+    animation: move_time 1.3s infinite;
+    
+}
+
+@keyframes move_time{
+    20%,
+    50%,
+    80%{
+        transform: translateY(0px);
+    }
+
+    30%{
+        transform: translateY(-45px);
+    }
+    
+    60%{
+        transform: translateY(-25px);
+    }
+}
+
+@media (max-width: 980px){
+
+    .content{
+        width: 20rem;
+        height: 27rem;
+    }
+
+    .time{
+        font-size: 55px;
+    }
+    span{
+        font-size: 1rem;
+    }
+
+    .content-btn button {
+        width: 2rem;
+    }
+}
